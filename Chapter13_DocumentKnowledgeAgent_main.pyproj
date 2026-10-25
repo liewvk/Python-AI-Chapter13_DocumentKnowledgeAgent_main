@@ -1,0 +1,84 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a9049c59-3d66-4988-b6a4-305cec865ba3</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Chapter13_DocumentKnowledgeAgent\main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Chapter13_DocumentKnowledgeAgent_main</Name>
+    <RootNamespace>Chapter13_DocumentKnowledgeAgent_main</RootNamespace>
+    <InterpreterId>MSBuild|.venv|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Chapter13_DocumentKnowledgeAgent\document_loader.py" />
+    <Compile Include="Chapter13_DocumentKnowledgeAgent\main.py" />
+    <Compile Include="Chapter13_DocumentKnowledgeAgent\rag_service.py" />
+    <Compile Include="Chapter13_DocumentKnowledgeAgent\settings.py" />
+    <Compile Include="Chapter13_DocumentKnowledgeAgent\tests\test_rag.py" />
+    <Compile Include="Chapter13_DocumentKnowledgeAgent_main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\.vs\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent.slnx\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent.slnx\FileContentIndex\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent.slnx\v18\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent\CopilotIndices\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent\CopilotIndices\18.10.1207.43936\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\data\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\knowledge\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\tests\" />
+    <Folder Include="Chapter13_DocumentKnowledgeAgent\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.gitignore" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent.slnx\FileContentIndex\ad350003-0836-4ce8-86b1-ec4a391955d1.vsidx" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent.slnx\v18\.wsuo" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent.slnx\v18\DocumentLayout.backup.json" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent.slnx\v18\DocumentLayout.json" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\Chapter13_DocumentKnowledgeAgent\CopilotIndices\18.10.1207.43936\SemanticSymbols.db" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\ProjectSettings.json" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\slnx.sqlite" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\.vs\VSWorkspaceState.json" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\knowledge\admissions_and_fees.pdf" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\knowledge\it_knowledge_base.md" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\knowledge\library_faq.txt" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\knowledge\staff_procedures.docx" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\README.md" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\requirements.txt" />
+    <Content Include="Chapter13_DocumentKnowledgeAgent\__pycache__\document_loader.cpython-310.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include=".venv\">
+      <Id>.venv</Id>
+      <Version>3.10</Version>
+      <Description>.venv (Python 3.10)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
